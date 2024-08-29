@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './DynamicBackground.css'
 
 const DynamicBackground = () => {
   const [backgroundColor, setBackgroundColor] = useState('gray');
@@ -15,18 +16,7 @@ const DynamicBackground = () => {
 
   return (
     <button
-      onClick={changeBackgroundColor}
-      style={{
-        height: '60px',
-        width: '80px',
-        backgroundColor: 'gray',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        cursor: 'pointer',
-        border: '2px solid black',
-      }}
-    >
+      onClick={changeBackgroundColor}>
       Change color!
     </button>
   );
